@@ -13,28 +13,30 @@ class Pattern
     public void Display(int iRow , int iCol)
     {
         int i = 0 , j = 0;
+        int iCount = 1;
 
         for(i = 1; i <= iRow; i++)
         {
-            if((i % 2) == 0)
+            for(j = 1 , iCount = 1; j <= iCol; j++)
             {
-                for(j = 1 ; j <= (2 * iCol); j++)
+
+                if((i % 2) == 0)
                 {
-                    if((j % 2) != 0)
+                    if((iCount % 2) != 0)
                     {
-                        System.out.print(j+"\t");
+                        System.out.print(iCount+"\t");
+                        iCount++ ;
                     }
                 }
-            }
-            else
-            {
-                for(j = 1 ; j <= (2 * iCol); j++)
+                else
                 {
-                    if((j % 2) == 0)
+                    if((iCount % 2) == 0)
                     {
-                        System.out.print(j+"\t");
+                        System.out.print(iCount+"\t");
+                        iCount++ ;
                     }
                 }
+
             }
             System.out.println();
         }

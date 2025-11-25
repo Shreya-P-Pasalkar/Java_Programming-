@@ -17,20 +17,17 @@ class Pattern
 
         for(i = 1; i <= iRow ; i++)
         {
-            if((i % 2) == 0)
+            for(j = 1; j <= iCol; j++)
             {
-                ch = 'a';
-                for(j = 1; j <= iCol; j++)
+                if((i % 2) == 0)
                 {
+                    ch = 'a';
                     System.out.print(ch+"\t");
                     ch++;
                 }
-            }
-            else
-            {
-                ch = 'A';
-                for(j = 1; j <= iCol; j++)
+                else
                 {
+                    ch = 'A';
                     System.out.print(ch+"\t");
                     ch++;
                 }

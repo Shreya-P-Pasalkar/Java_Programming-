@@ -1,9 +1,10 @@
 /* 
-Input :   iRow = 4      iCol = 5
-Output :  a     b     c     d     e
-          1     2     3     4     5
-          a     b     c     d     e
-          1     2     3     4     5
+Input :   iRow = 5      iCol = 5
+Output :    1   2   3   4   5
+            1   2           5
+            1       3       5
+            1           4   5
+            1   2   3   4   5
 */
 
 import java.util.*;
@@ -13,29 +14,36 @@ class Pattern
     public void Display(int iRow , int iCol)
     {
         int i = 0 , j = 0;
-        char ch;
 
-        for(i = 1 , ch = 'a'; i <= iRow; i++)
+        if(iRow != iCol)
         {
-            for(j = 1; j <= iCol; j++)
+            System.out.println("Invalid input");
+            System.out.println("Number of rows and columns should be equal");
+        }
+
+        for(i = 1; i <= iRow; i++)
+        {
+            for(j = 1; j <= iRow; j++)
             {
-                if((i % 2) == 0)
+                if((i == 1) || (i == iRow) || (j == 1) || (j == iCol))
+                {           
+                    System.out.print(j+"\t");
+                }
+                else if(i == j)
                 {
                     System.out.print(j+"\t");
                 }
                 else
                 {
-                    System.out.print(ch+"\t");
-                    ch++;
+                    System.out.print(" \t");
                 }
-
             }
             System.out.println();
         }
     }        
 }
 
-class program03
+class program05
 {
     public static void main(String A[])
     {
