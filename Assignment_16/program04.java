@@ -1,0 +1,22 @@
+class Logic
+{
+    void ReverseNumber(int num)
+    {
+        int iDigit = 0;
+        
+        while(num > 0)
+        {
+            iDigit = num % 10;
+            System.out.println(iDigit);
+            num = num / 10;
+        }
+    }
+}
+class program04
+{
+    public static void main(String args[])
+    {
+        Logic obj = new Logic();
+        obj.ReverseNumber(1234);
+    }
+}
