@@ -1,0 +1,89 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+//  Required Header Files
+/////////////////////////////////////////////////////////////////////////////////////////////
+import java.util.Scanner;
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name :   Arithmetic
+//  Description :  It is used to perform Arithmetic operations
+//  Author :       Shreya Pramod Pasalkar
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+class Arithmetic
+{
+    public int No1 = 0;
+    public int No2 = 0;
+
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //  Function :     Arithmetic
+    //  Description :  Parameterized Constructor
+    //  Input :        integer, integer
+    //  Output :       Nothing
+    //  Author :       Shreya Pramod Pasalkar
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////
+    public Arithmetic(int A, int B) 
+    {
+        this.No1 = A;
+        this.No2  = B;
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //  Function :     Addition
+    //  Description :  It is used to do addition of 2 numbers
+    //  Input :        integer, integer
+    //  Output :       integer
+    //  Author :       Shreya Pramod Pasalkar
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////
+    public int Addition()
+    {
+        int iSum = 0;
+
+        iSum = this.No1 + this.No2;
+
+        return iSum;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name :   program01
+//  Description :  Entry point class
+//  Author :       Shreya Pramod Pasalkar
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+class program08
+{
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //  Function :     main
+    //  Description :  Entry point function
+    //  Author :       Shreya Pramod Pasalkar
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////
+    public static void main(String A[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        
+        int iNo1 = 0;
+        int iNo2 = 0;
+        int iRet = 0;
+
+        System.out.println("Enter first Number : ");
+        iNo1 = sobj.nextInt();
+
+        System.out.println("Enter second Number : ");
+        iNo2 = sobj.nextInt();
+ 
+        Arithmetic aobj = new Arithmetic(iNo1, iNo2);
+
+        iRet = aobj.Addition();
+
+        System.out.println("Addition is : "+iRet);
+
+    }
+}

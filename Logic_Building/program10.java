@@ -1,0 +1,89 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+//  Required Header Files
+/////////////////////////////////////////////////////////////////////////////////////////////
+import java.util.Scanner;
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name :   Check
+//  Description :  It is used to check some mathematical entities
+//  Author :       Shreya Pramod Pasalkar
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+class Arithmetic
+{
+    public int iNo = 0;
+
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //  Function :     Arithmetic
+    //  Description :  Parameterized Constructor
+    //  Input :        Integer
+    //  Output :       Nothing
+    //  Author :       Shreya Pramod Pasalkar
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////
+    public Arithmetic(int A) 
+    {
+        this.iNo = A;
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //  Function :     CheckEven
+    //  Description :  It is used to return remainder
+    //  Input :        Nothing
+    //  Output :       Integer
+    //  Author :       Shreya Pramod Pasalkar
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////
+    public int CheckEven()
+    {
+        int iRem = 0;
+
+        iRem = this.iNo % 2;
+
+        return iRem;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name :   program10
+//  Description :  Entry point class
+//  Author :       Shreya Pramod Pasalkar
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+class program10
+{
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //  Function :     main
+    //  Description :  Entry point function
+    //  Author :       Shreya Pramod Pasalkar
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////
+    public static void main(String A[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        
+        int iNo = 0;
+        int iRet = 0;
+
+        System.out.println("Enter first Number : ");
+        iNo = sobj.nextInt();
+ 
+        Arithmetic aobj = new Arithmetic(iNo);
+        
+        iRet = aobj.CheckEven();
+
+        if(iRet == 0)
+        {
+            System.out.println(iNo+" is a Even Number");
+        }
+        else
+        {
+            System.out.println(iNo+" is not a Even Number");
+        }
+    }
+}
