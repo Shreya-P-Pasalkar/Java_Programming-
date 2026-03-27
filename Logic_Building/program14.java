@@ -50,7 +50,7 @@ class Arithmetic
 //  Author :       Shreya Pramod Pasalkar
 //
 /////////////////////////////////////////////////////////////////////////////////////////////
-class program13
+class program14
 {
     /////////////////////////////////////////////////////////////////////////////////////////
     //
@@ -66,7 +66,7 @@ class program13
         int iNo = 0;
         boolean iRet = false;
 
-        System.out.println("Enter first Number : ");
+        System.out.println("Enter Number : ");
         iNo = sobj.nextInt();
  
         Arithmetic aobj = new Arithmetic(iNo);
