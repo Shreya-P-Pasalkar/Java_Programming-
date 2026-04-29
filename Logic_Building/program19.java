@@ -1,0 +1,45 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name :   Implement
+//  Description :  It is used to implement Iteration
+//  Author :       Shreya Pramod Pasalkar
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+class Implement
+{
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //  Function :     ImplementIteration
+    //  Description :  It is used to implement Iteration
+    //  Input :        Nothing
+    //  Output :       Nothing
+    //  Author :       Shreya Pramod Pasalkar  
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////
+    public void ImplementIteration()
+    {   
+        int iCnt = 0;
+        // Iteration
+        for(iCnt = 0; iCnt < 4; iCnt++)
+        {
+            System.out.println("Jay Ganesh...");
+        }
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name :   program19
+//  Description :  Entry point class
+//  Author :       Shreya Pramod Pasalkar
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+class program19
+{
+    public static void main(String A[])
+    {
+        Implement iobj = new Implement(4);
+
+        iobj.ImplementIteration();
+    }
+}
