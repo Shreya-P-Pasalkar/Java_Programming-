@@ -1,0 +1,44 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name :   Implement
+//  Description :  It is used to implement Sequence
+//  Author :       Shreya Pramod Pasalkar
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+class Implement
+{
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //  Function :     ImplementSequence
+    //  Description :  It is used to implement Sequence
+    //  Input :        Nothing
+    //  Output :       Nothing
+    //  Author :       Shreya Pramod Pasalkar  
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////
+    public void ImplementSequence()
+    {   
+        // Sequence
+        System.out.println("Jay Ganesh...");
+        System.out.println("Jay Ganesh...");
+        System.out.println("Jay Ganesh...");
+        System.out.println("Jay Ganesh...");
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name :   program16
+//  Description :  Entry point class
+//  Author :       Shreya Pramod Pasalkar
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+class program18
+{
+    public static void main(String A[])
+    {
+        Implement iobj = new Implement();
+
+        iobj.ImplementSequence();
+    }
+}
