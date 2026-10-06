@@ -45,7 +45,7 @@ class Arithmetic
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 //
-//  Class Name :   program13
+//  Class Name :   program14
 //  Description :  Entry point class
 //  Author :       Shreya Pramod Pasalkar
 //
