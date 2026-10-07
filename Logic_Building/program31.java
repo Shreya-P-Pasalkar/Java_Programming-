@@ -10,22 +10,22 @@ class Implement
     /////////////////////////////////////////////////////////////////////////////////////////
     //
     //  Function :     Display
-    //  Description :  It is used to display Number *
-    //  Pattern :      1    *   2    *    3   *    4   *    5   *
+    //  Description :  It is used to display Reverse Numbers
+    //  Pattern :      5    4   3   2   1
     //  Input :        Nothing
     //  Output :       Nothing
     //  Author :       Shreya Pramod Pasalkar  
     //
     /////////////////////////////////////////////////////////////////////////////////////////
-    public void Display()
+    public void DisplayReverse()
     {   
+        // Loop Counter
         int iCnt = 0;
 
         // Iteration : for loop
-        // Static printing
-        for(iCnt = 1; iCnt <= 5; iCnt++)
+        for(iCnt = 5; iCnt > 0; iCnt--)
         {
-            System.out.print(iCnt+"\t*\t");
+            System.out.print(iCnt+"\t");
         }
 
         System.out.println();
@@ -34,17 +34,17 @@ class Implement
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 //
-//  Class Name :   program28
+//  Class Name :   program31
 //  Description :  Entry point class
 //  Author :       Shreya Pramod Pasalkar
 //
 /////////////////////////////////////////////////////////////////////////////////////////////
-class program28
+class program31
 {
     public static void main(String A[])
     {
         Implement iObj = new Implement();
 
-        iObj.Display();
+        iObj.DisplayReverse();
     }
 }
