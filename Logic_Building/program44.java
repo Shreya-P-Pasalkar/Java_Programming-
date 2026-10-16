@@ -1,0 +1,93 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+//  Required Header Files
+/////////////////////////////////////////////////////////////////////////////////////////////
+import java.util.Scanner;
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name :   Implement
+//  Description :  It is used to implement the business logic
+//  Author :       Shreya Pramod Pasalkar
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+class Implement
+{
+    
+    public int iNo = 0;
+
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //  Function :     Constructor
+    //  Description :  Default constructor
+    //  Input :        Nothing
+    //  Output :       Nothing
+    //  Author :       Shreya Pramod Pasalkar  
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////
+    public Implement(int iNo)
+    {
+        // Static
+        this.iNo = iNo;
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //  Updater
+    /////////////////////////////////////////////////////////////////////////////////////////
+    public void Update()
+    {
+        if(this.iNo < 0)
+        {
+            this.iNo = -this.iNo;
+        }
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //  Function :     Display
+    //  Description :  It is used to display factors of 6 
+    //  Input :        Nothing
+    //  Output :       Nothing
+    //  Author :       Shreya Pramod Pasalkar  
+    //
+    /////////////////////////////////////////////////////////////////////////////////////////
+    public void DisplayFactors()
+    {
+        int iCnt = 0;
+
+        // Using Iteration ~ for loop
+        // Time Complexity ~ O(N/2)
+        for(iCnt = 1; iCnt <= iNo/2; iCnt++)
+        {
+            if(iNo % iCnt == 0)
+            {
+                System.out.print(iCnt+"\t");
+            }
+        } 
+
+        System.out.println(iNo);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Class Name :   program44
+//  Description :  Entry point class
+//  Author :       Shreya Pramod Pasalkar
+//
+/////////////////////////////////////////////////////////////////////////////////////////////
+class program44
+{
+    public static void main(String A[])
+    {
+        int iNo = 0;
+
+        Scanner sobj = new Scanner(System.in);
+
+        System.out.println("Enter Number : ");
+        iNo = sobj.nextInt();
+
+        Implement iObj = new Implement(iNo);
+
+        iObj.DisplayFactors();
+    }
+}
