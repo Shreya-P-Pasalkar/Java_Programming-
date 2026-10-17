@@ -18,8 +18,8 @@ class Implement
     /////////////////////////////////////////////////////////////////////////////////////////
     //
     //  Function :     Constructor
-    //  Description :  Parameterized constructor
-    //  Input :        Integer , Integer
+    //  Description :  Default constructor
+    //  Input :        Nothing
     //  Output :       Nothing
     //  Author :       Shreya Pramod Pasalkar  
     //
@@ -33,9 +33,9 @@ class Implement
     /////////////////////////////////////////////////////////////////////////////////////////
     //
     //  Function :     Display
-    //  Description :  It is used to check divisibility
+    //  Description :  It is used to display factors of 6 
     //  Input :        Nothing
-    //  Output :       boolean
+    //  Output :       Nothing
     //  Author :       Shreya Pramod Pasalkar  
     //
     /////////////////////////////////////////////////////////////////////////////////////////
