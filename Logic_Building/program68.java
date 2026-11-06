@@ -41,7 +41,7 @@ class Implement
         int iCnt = 0;
         int iSum = 0;
 
-        for(iCnt = iNo/2; (iCnt > 0) && (iNo%iCnt == 0); iCnt--) // Condition failure
+        for(iCnt = iNo/2; (iCnt > 0) && (iSum < iNo); iCnt--)
         {
             if(iNo % iCnt == 0)
             {

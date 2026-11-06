@@ -41,15 +41,15 @@ class Implement
         int iCnt = 0;
         int iSum = 0;
 
-        for(iCnt = 1; (iCnt <= iNo/2) && (iNo%iCnt == 0); iCnt++) // Condition failure
+        for(iCnt = 1; (iCnt <= iNo/2) && (iSum < this.iNo); iCnt++) 
         {
-            if(iNo % iCnt == 0)
+            if(this.iNo % iCnt == 0)
             {
                 iSum += iCnt;
             }
         }
 
-        return (iSum == iNo);
+        return (iSum == this.iNo);
     }
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
